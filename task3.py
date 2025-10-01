@@ -15,6 +15,8 @@ def get_test_mark():
 
 def display_all(Name, Mark):
     print()
+    return Name
+    return Mark
 
 for index in range(5):
     name.append(get_name())
