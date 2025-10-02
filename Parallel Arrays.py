@@ -1,7 +1,9 @@
-name = []
-mark = []
-
-
+from dataclasses import dataclass
+@dataclass
+class person():
+    name : str = 0.0
+    mark : float = 0.0
+    
 def get_name():
     print()
     thisName = input("Enter name: ")
@@ -18,9 +20,11 @@ def get_test_mark():
 def display_all(Name, Mark):
     print()
     for index in range(5):
-        print(name[index], "scored", mark[index])
+        print(people[index].name, "scored", str(people[index].mark))
 
+people = [person(),person(),person(),person(),person(),]
 for index in range(5):
-    name.append(get_name())
-    mark.append(get_test_mark())
-display_all(name,mark)
+    people[index].name =get_name()
+    people[index].mark = (get_test_mark())
+display_all(people[index].name, people[index].mark)
+
