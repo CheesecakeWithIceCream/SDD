@@ -1,0 +1,7 @@
+password=input("Please enter a secure password: ")
+while ord(password[:1]) > 91 or ord(password[0]) < 64 and ord(password[-1]) < 35 or ord(password[-1]) > 37:
+    print("First letter must be capital and last character must be $,%,&")
+    password=input("Please enter a secure password ")
+
+    
+
