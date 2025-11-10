@@ -15,4 +15,4 @@ for index in range(1, len(times)):
 	if mini > times[index]:
 		mini = times[index]
 		position = index
-print(names[position], "Got the fastest time to run 100m of", mini)
+print(names[position], "got the fastest time to run 100m of", mini)
